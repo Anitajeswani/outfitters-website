@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Outfitters - Women Outerwear</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .brand {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .category-nav a {
+      text-decoration: none;
+      color: #000;
+      display: block;
+      padding: 8px 0;
+      text-align: center;
+    }
+    .category-nav a.active {
+      border-bottom: 2px solid #000;
+      font-weight: 600;
+    }
+    .category-col {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    @media (max-width: 575.98px) {
+      .category-nav a {
+        font-size: 14px;
+      }
+    }
+      .product-img{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+
+  <!-- Navbar with toggle button -->
+  <nav class="navbar navbar-light bg-white border-bottom py-3 px-0">
+    <div class="container-fluid justify-content-between align-items-center">
+
+      <!-- Left: Toggle + Logo -->
+      <div class="d-flex align-items-center gap-2">
+        <!-- Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Logo -->
+        <span class="brand">Outfitters</span>
+      </div>
+
+      <!-- Right: Search, User, Cart -->
+      <div class="d-flex align-items-center gap-3">
+        <div class="d-flex align-items-center gap-1">
+          <i class="bi bi-search"></i>
+          <span>Search</span>
+        </div>
+        <i class="bi bi-person fs-5"></i>
+        <i class="bi bi-bag fs-5"></i>
+      </div>
+
+    </div>
+
+    <!-- Collapsible menu (for toggle button) -->
+    <div class="collapse mt-2" id="navbarMenu">
+      <!-- You can add additional menu links here if needed -->
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Menu Item 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu Item 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Menu Item 3</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="py-4">
+    <small class="text-uppercase">
+      HOME / WOMEN / <strong>WOMEN OUTERWEAR</strong>
+    </small>
+  </div>
+
+  <!-- Category Navigation as Bootstrap grid columns -->
+  <div class="category-nav border-bottom pb-3">
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 row-cols-lg-10">
+      <div class="col category-col"><a href="#" class="active">ALL</a></div>
+      <div class="col category-col"><a href="#">DENIM</a></div>
+      <div class="col category-col"><a href="#">BLAZERS</a></div>
+      <div class="col category-col"><a href="#">COATS</a></div>
+      <div class="col category-col"><a href="#">CROPPED</a></div>
+      <div class="col category-col"><a href="#">FAUX LEATHER</a></div>
+      <div class="col category-col"><a href="#">BOMBER</a></div>
+      <div class="col category-col"><a href="#">PUFFER</a></div>
+      <div class="col category-col"><a href="#">OVER SIZED</a></div>
+      <div class="col category-col"><a href="#">SUEDE</a></div>
+    </div>
+  </div>
+ <div class="row g-4">
+
+    <!-- Product 1 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg">
+      <div class="text-center">
+        <img src="https://outfitters.com.pk/cdn/shop/files/F0326201203_ab6e0fbc-7288-4910-991c-9fe73a8b6ed3.jpg?v=1761908407&width=1066"
+             class="product-img mb-3" alt="Jacket">
+        <h6 class="fw-bold">SUPER CROPPED SUEDE JACKET</h6>
+        <small class="text-muted">REGULAR FIT | WOMEN</small>
+        <p class="mt-2"><del>PKR 13,990</del> <b>PKR 6,990</b> <span class="text-danger">-50%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg">
+      <div class="text-center">
+        <img src="https://outfitters.com.pk/cdn/shop/files/F0180201801_4.jpg?v=1767074439&width=1066"
+             class="product-img mb-3" alt="Jacket">
+        <h6 class="fw-bold">SUPER CROPPED SUEDE JACKET</h6>
+        <small class="text-muted">REGULAR FIT | WOMEN</small>
+        <p class="mt-2"><del>PKR 13,990</del> <b>PKR 6,990</b> <span class="text-danger">-50%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg">
+      <div class="text-center">
+        <img src="https://outfitters.com.pk/cdn/shop/files/F0266201802_b623fd52-2959-494b-940f-1255a07cec3d.jpg?v=1760692633&width=1066"
+             class="product-img mb-3" alt="Leather Jacket">
+        <h6 class="fw-bold">CROPPED FAUX LEATHER JACKET</h6>
+        <small class="text-muted">RELAXED FIT | WOMEN</small>
+        <p class="mt-2"><del>PKR 15,990</del> <b>PKR 7,990</b> <span class="text-danger">-50%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+   <div class="col-12 col-sm-6 col-md-4 col-lg">
+      <div class="text-center">
+        <img src="https://outfitters.com.pk/cdn/shop/files/F0206201801_a1248d27-a6a7-444d-bc68-f42be353f8be.jpg?v=1766996923&width=1066"
+             class="product-img mb-3" alt="Jacket">
+        <h6 class="fw-bold">SUPER CROPPED SUEDE JACKET</h6>
+        <small class="text-muted">REGULAR FIT | WOMEN</small>
+        <p class="mt-2"><del>PKR 13,990</del> <b>PKR 6,990</b> <span class="text-danger">-50%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg">
+      <div class="text-center">
+        <img src="https://outfitters.com.pk/cdn/shop/files/F0326201203_ab6e0fbc-7288-4910-991c-9fe73a8b6ed3.jpg?v=1761908407&width=1066"
+             class="product-img mb-3" alt="Jacket">
+        <h6 class="fw-bold">SUPER CROPPED SUEDE JACKET</h6>
+        <small class="text-muted">REGULAR FIT | WOMEN</small>
+        <p class="mt-2"><del>PKR 13,990</del> <b>PKR 6,990</b> <span class="text-danger">-50%</span></p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row g-4">
+
+    <!-- Product 1 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg">
+      <div class="text-center">
+        <img src="https://outfitters.com.pk/cdn/shop/files/F0266201117.2_bcf14ff6-4e79-4ebe-9155-94d808cb0a78.jpg?v=1760692633&width=1066"
+             class="product-img mb-3" alt="Jacket">
+        <h6 class="fw-bold">Cropped Quilted Puffer Jacket</h6>
+        <small class="text-muted">REGULAR FIT | WOMEN</small>
+        <p class="mt-2"><del>PKR 13,990</del> <b>PKR 7,990</b> <span class="text-danger">-50%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg">
+      <div class="text-center">
+        <img src="https://outfitters.com.pk/cdn/shop/files/F0432201901_9a8e90b5-a6d6-4993-8af2-f6c6285bb38b.jpg?v=1761200165&width=1066"
+             class="product-img mb-3" alt="Jacket">
+        <h6 class="fw-bold">Notched Collar Blazer</h6>
+        <small class="text-muted">REGULAR FIT | WOMEN</small>
+        <p class="mt-2"><del>PKR 13,990</del> <b>PKR 6,990</b> <span class="text-danger">-50%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg">
+      <div class="text-center">
+        <img src="https://outfitters.com.pk/cdn/shop/files/F0344201911.jpg?v=1763373477&width=1066"
+             class="product-img mb-3" alt="Leather Jacket">
+        <h6 class="fw-bold">CNotch Collar Blazer</h6>
+        <small class="text-muted">RELAXED FIT | WOMEN</small>
+        <p class="mt-2"><del>PKR 7,990</del> <b>PKR 7,990</b> <span class="text-danger">-50%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+   <div class="col-12 col-sm-6 col-md-4 col-lg">
+      <div class="text-center">
+        <img src="https://outfitters.com.pk/cdn/shop/files/F0432201002.jpg?v=1768383240&width=1066"
+             class="product-img mb-3" alt="Jacket">
+        <h6 class="fw-bold">Notched Collar Blazer</h6>
+        <small class="text-muted">REGULAR FIT | WOMEN</small>
+        <p class="mt-2"><del>PKR 11,990</del> <b>PKR 6,990</b> <span class="text-danger">-50%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg">
+      <div class="text-center">
+        <img src="https://outfitters.com.pk/cdn/shop/files/F0330201308_1.jpg?v=1762517152&width=1066"
+             class="product-img mb-3" alt="Jacket">
+        <h6 class="fw-bold">SUPER CROPPED SUEDE JACKET</h6>
+        <small class="text-muted">REGULAR FIT | WOMEN</small>
+        <p class="mt-2"><del>PKR 13,990</del> <b>PKR 6,990</b> <span class="text-danger">-50%</span></p>
+      </div>
+    </div>
+
+  </div>
+
+    <div class="row g-4">
+
+    <!-- Product 1 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg">
+      <div class="text-center">
+        <img src="https://outfitters.com.pk/cdn/shop/files/F0434201816_48fb2d86-0c08-4dae-b713-cac1b6ee37ef.jpg?v=1762407874&width=1066"
+             class="product-img mb-3" alt="Jacket">
+        <h6 class="fw-bold">Cropped Corduroy Jacket</h6>
+        <small class="text-muted">REGULAR FIT | WOMEN</small>
+        <p class="mt-2"><del>PKR 4,990</del> <b>PKR 7,990</b> <span class="text-danger">-50%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg">
+      <div class="text-center">
+        <img src="https://outfitters.com.pk/cdn/shop/files/F0358201625.jpg?v=1762407668&width=1066"
+             class="product-img mb-3" alt="Jacket">
+        <h6 class="fw-bold">Cropped Denim Jacket</h6>
+        <small class="text-muted">REGULAR FIT | WOMEN</small>
+        <p class="mt-2"><del>PKR 6,990</del> <b>PKR 6,990</b> <span class="text-danger">-50%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg">
+      <div class="text-center">
+        <img src="https://outfitters.com.pk/cdn/shop/files/F0313201618.jpg?v=1761198186&width=1066"
+             class="product-img mb-3" alt="Leather Jacket">
+        <h6 class="fw-bold">Cropped Batwing Denim Jacket</h6>
+        <small class="text-muted">RELAXED FIT | WOMEN</small>
+        <p class="mt-2"><del>PKR 7,990</del> <b>PKR 7,990</b> <span class="text-danger">-50%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+   <div class="col-12 col-sm-6 col-md-4 col-lg">
+      <div class="text-center">
+        <img src="https://outfitters.com.pk/cdn/shop/files/F0324201003.jpg?v=1762516796&width=1066"
+             class="product-img mb-3" alt="Jacket">
+        <h6 class="fw-bold">Faux Leather Biker Jacket</h6>
+        <small class="text-muted">REGULAR FIT | WOMEN</small>
+        <p class="mt-2"><del>PKR 11,990</del> <b>PKR 6,990</b> <span class="text-danger">-50%</span></p>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg">
+      <div class="text-center">
+        <img src="https://outfitters.com.pk/cdn/shop/files/F0357201903.jpg?v=1762407457&width=1066"
+             class="product-img mb-3" alt="Jacket">
+        <h6 class="fw-bold">Cropped Denim Trucker</h6>
+        <small class="text-muted">REGULAR FIT | WOMEN</small>
+        <p class="mt-2"><del>PKR 13,990</del> <b>PKR 5,990</b> <span class="text-danger">-50%</span></p>
+      </div>
+    </div>
+
+  </div>
+
+   <div class="row align-items-center py-5">
+
+    <!-- LEFT -->
+    <div class="col-md-4 ps-md-5">
+      <h1 class="fw-bold text-uppercase">
+        Be the first<br>
+        to know
+      </h1>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="col-md-8 pe-md-5">
+
+      <p class="fw-semibold text-uppercase mb-4">
+        Get an update of all our latest collections, discounts & features coming up
+      </p>
+
+      <div class="mb-5">
+        <input
+          type="email"
+          class="form-control border-0 border-bottom rounded-0"
+          placeholder="ENTER YOUR EMAIL">
+      </div>
+
+      <button class="btn btn-dark px-5 py-2 text-uppercase">
+        Sign me up!
+      </button>
+
+    </div>
+
+  </div>
+
+  <div class="row bg-dark text-white py-5">
+
+    <!-- LEFT LOGO -->
+    <div class="col-md-6 ps-md-5 mb-4 mb-md-0">
+      <h1 class="fw-bold display-3">Outfitters</h1>
+    </div>
+
+    <!-- RIGHT LINKS -->
+    <div class="col-md-6">
+      <div class="row">
+
+        <!-- COLUMN 1 -->
+        <div class="col-6 col-md-4">
+          <ul class="list-unstyled">
+            <li class="mb-2">Shopping Guide</li>
+            <li class="mb-2">Log In/Sign Up</li>
+            <li class="mb-2">Exchange & Returns</li>
+            <li class="mb-2">Shipping & Deliveries</li>
+            <li class="mb-2">How To Buy</li>
+            <li class="mb-2">Payment</li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="col-6 col-md-4">
+          <ul class="list-unstyled">
+            <li class="mb-2">About Us</li>
+            <li class="mb-2">Retail Stores</li>
+            <li class="mb-2">Contact Us</li>
+          </ul>
+        </div>
+
+      </div>
+       <div class="col text-end pe-md-5">
+      <small>© Copyrights Reserved by Outfitters 2025</small>
+    </div>
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <!-- <div class="row  bg-dark text-white mt-5">
+    <div class="col text-end pe-md-5">
+      <small>© Copyrights Reserved by Outfitters 2025</small>
+    </div>
+  </div> -->
+
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Active category toggle -->
+<script>
+  document.querySelectorAll('.category-nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelectorAll('.category-nav a').forEach(el => el.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
